@@ -1,8 +1,12 @@
 {
   "name": "fbt-generate-translations",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generates translations from collected translations (collectFbt.js) to a format that FBT's translate script expects.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdamRamberg/fbt-generate-translations.git"
+  },
   "scripts": {
     "build": "yarn clean && yarn rollup && yarn copy-to-dist",
     "clean": "rm -rf dist",
