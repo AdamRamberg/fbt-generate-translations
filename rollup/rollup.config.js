@@ -1,5 +1,5 @@
 const base = {
-  input: 'src/index.js',
+  input: 'index.js',
 };
 
 const cjs = Object.assign({}, base, {
