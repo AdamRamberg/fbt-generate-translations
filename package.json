@@ -15,7 +15,9 @@
     "rollup": "npx rollup -c rollup/rollup.config.js"
   },
   "keywords": [
-    "fbt"
+    "fbt",
+    "translations",
+    "react"
   ],
   "author": "Adam Ramberg",
   "license": "ISC",
