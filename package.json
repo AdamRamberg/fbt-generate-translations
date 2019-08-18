@@ -1,0 +1,31 @@
+{
+  "name": "fbt-generate-translations",
+  "version": "0.0.1",
+  "description": "Generates translations from collected translations (collectFbt.js) to a format that FBT's translate script expects.",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn clean && yarn rollup && yarn copy-to-dist",
+    "clean": "rm -rf dist",
+    "copy-to-dist": "cp README.md dist && cp package.json dist/package.json",
+    "prepublish": "yarn build",
+    "rollup": "npx rollup -c rollup/rollup.config.js"
+  },
+  "keywords": [
+    "fbt"
+  ],
+  "author": "Adam Ramberg",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "yargs": "^13.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.19.4"
+  }
+}
