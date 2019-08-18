@@ -1,4 +1,4 @@
-# 💬 fbt-generate-translations
+# fbt-generate-translations
 
 Generates translations from collected translations (collectFbt.js) to a format that FBT's translate script expects.
 
